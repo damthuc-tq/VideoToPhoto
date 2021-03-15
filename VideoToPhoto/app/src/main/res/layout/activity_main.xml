@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_marginBottom="50dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@drawable/vien_item_home"
+            android:onClick="selectVideo"
+            android:paddingVertical="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                app:srcCompat="@drawable/icon_video" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Select Video"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/vien_item_home"
+            android:onClick="gallery"
+            android:paddingVertical="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                app:srcCompat="@drawable/icon_folder" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Gallery"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/vien_item_home"
+            android:onClick="slideShơMaker"
+            android:paddingVertical="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                app:srcCompat="@drawable/icon_edit_video"
+                tools:srcCompat="@drawable/icon_edit_video" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Slide Show Maker"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/vien_item_home"
+            android:onClick="setting"
+            android:paddingVertical="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:adjustViewBounds="false"
+                android:cropToPadding="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/icon_setting"
+                tools:srcCompat="@drawable/icon_setting" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Setting"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@drawable/vien_menu_button"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:onClick="share"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bovien_icon"
+                app:srcCompat="@drawable/icon_share" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="Share"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:onClick="rateMe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bovien_icon"
+                app:srcCompat="@drawable/icon_rate_me" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="Rate us"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:onClick="aboutMe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bovien_icon"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/icon_about_me"
+                tools:srcCompat="@drawable/icon_about_me" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="About us"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
